@@ -1,458 +1,500 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-  <title>Lingxue Zhu, CMU Statistics</title>
-	<meta name="google-site-verification" content="_icP2W3B6y_gFG92Dh-caUWIh_sEnE4tPu8pghzaH2w" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script>
-	$(document).ready(function(){
-	  $("a").on('click', function(event) {
-	    if (this.hash !== "") {
-	      event.preventDefault();
-	
-	      var hash = this.hash;
-	
-	      $('html, body').animate({
-	        scrollTop: $(hash).offset().top
-	      }, 500, function(){
-	        window.location.hash = hash;
-	      });
-	    }
-	  });
-	});
-	</script>
+<!DOCTYPE html>
+<!-- saved from url=(0035)https://people.csail.mit.edu/bzhou/ -->
+<html class="gr__people_csail_mit_edu"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Bolei Zhou</title>
+
+<link rel="stylesheet" href="./Bolei Zhou_files/bootstrap.min.css">
+<style type="text/css">
+ @import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic");
+
+
+body
+{
+	font-family: 'Source Sans Pro', sans-serif;
+    background-color : #CDCDCD;
+    font-size: 19px;
+}
+    .content
+	{
+    		width : 900px;
+    		padding : 25px 30px;
+    		margin : 25px auto;
+    		background-color : #fff;
+    		box-shadow: 0px 0px 10px #999;
+    		border-radius: 15px;
+	}
+	table
+	{
+		padding: 5px;
+	}
+
+	table.pub_table,td.pub_td1,td.pub_td2
+	{
+		padding: 8px;
+		width: 850px;
+        border-collapse: separate;
+        border-spacing: 15px;
+        margin-top: -5px;
+	}
+
+	td.pub_td1
+	{
+		width:50px;
+	}
+    td.pub_td1 img
+    {
+        height:120px;
+        width: 160px;
+    }
+
+	div#container
+	{
+		margin-left: auto;
+		margin-right: auto;
+		width: 820px;
+		text-align: left;
+		position: relative;
+		background-color: #FFF;
+	}
+	div#DocInfo
+	{
+		color: #1367a7;
+		height: 158px;
+	}
+	h4,h3,h2,h1
+	{
+		color: #3B3B3B;
+	}
+	h2
+	{
+		font-size:130%;
+	}
+	p
+	{
+		color: #5B5B5B;
+		margin-bottom: 50px;
+	}
+	p.caption
+	{
+		color: #9B9B9B;
+		text-align: left;
+		width: 600px;
+	}
+	p.caption2
+	{
+		color: #9B9B9B;
+		text-align: left;
+		width: 800px;
+	}
+	#header_img
+	{
+		position: absolute;
+		top: 0px; right: 0px;
+    }
+	a:link,a:visited
+	{
+		color: #1367a7;
+		text-decoration: none;
+	}
+
+    #mit_logo {
+        position: absolute;
+        left: 646px;
+        top: 14px;
+        width: 200px;
+        height: 20px;
+    }
+
+    table.pub_table tr {
+        outline: thin dotted #666666;
+    }
+    .papericon {
+        border-radius: 8px;
+        -moz-box-shadow: 3px 3px 6px #888;
+        -webkit-box-shadow: 3px 3px 6px #888;
+        box-shadow: 3px 3px 6px #888;
+    }
+</style>
+
+<script type="text/javascript" async="" src="./Bolei Zhou_files/ga.js"></script><script async="" src="./Bolei Zhou_files/analytics.js"></script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-23931362-2', 'mit.edu');
+  ga('send', 'pageview');
+
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-23931362-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+    var myPix = new Array("image/profile_correct.jpg")
+    function choosePic() {
+        var randomNum = Math.floor(Math.random() * myPix.length);
+        document.getElementById("myPicture").src = myPix[randomNum];
+    };
+
+</script>
 </head>
 
-<!--<body>-->
-<!--  <div class="banner">-->
-<!--    <div id="header">-->
-<!--      <div id="name">-->
-<!--        Yuanxun Zhang-->
-<!--      </div>-->
-<!--      <div id="navigator">-->
-<!--        <div class="nav_cell"><a class="nav" href="#about">About</a></div>-->
-<!--        <div class="nav_cell"><a class="nav" href="#research">Publications</a></div>-->
-<!--        <div class="nav_cell"><a class="nav" href="#experience">Experience</a></div>-->
-<!--        <div class="nav_cell"><a class="nav" href="#skill">Skills</a></div>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--  </div>-->
 
-<!--  <div id="main">-->
+<body data-gr-c-s-loaded="true">
+<div class="content">
+	<div id="container">
 
-<!--    <div class="content">-->
-<!--      <a class="anchor" id="about"></a>-->
-<!--      <div class="introduction">-->
-<!--        <div id="selfie">-->
-<!--          <img src="images/selfie.jpeg" /><br>-->
-<!--          <div style="text-align: center; margin-top: 10px; font-size: 12px; font-family: monospace;">bigfishinriver [at] gmail [dot] com</div>-->
-<!--        </div>-->
-<!--        <div class="right">-->
-<!--        <p>I am a quantitative researcher at <a class="link" href="https://www.twosigma.com/" target="_blank">Two Sigma</a>. -->
-<!--        </p>-->
-<!--        <p>-->
-<!--        I got my Ph.D. from the -->
-<!--        <a class="link" href="http://www.stat.cmu.edu/" target="_blank">Department of Statistics & Data Science</a> at <a class="link" href="https://www.cmu.edu/" target="_blank">Carnegie Mellon University</a> in May 2018, under supervision of Professor <a class="link" href="http://www.stat.cmu.edu/~roeder/" target="_blank">Kathryn Roeder</a> and Professor <a class="link" href="http://www.stat.cmu.edu/~jinglei/" target="_blank">Jing Lei</a>. -->
-<!--        My research spanned a wide range of topics, including network community detection, high-dimensional inference, hierarchical modeling, unsupervised clustering, as well as many exciting applications in genetics. -->
-<!--        Some of the codes for my research are available on <a class="link" href="https://github.com/lingxuez" target="_blank">GitHub</a>.-->
-<!--        </p>-->
-<!--        <p>-->
-<!--        I also hold a M.S. in <a class="link" href="https://www.ml.cmu.edu/" target="_blank">Machine Learning</a> from -->
-<!--        <a class="link" href="https://www.cmu.edu/" target="_blank">Carnegie Mellon University</a>.-->
-<!--		    Before coming to CMU, I got my B.S. in Statistics and secondary B.A. in Economics from <a class="link" href="http://www.pku.edu.cn/" target="_blank">Peking University</a>, China, in 2013.-->
-<!--        </p>-->
-<!--        -->
-<!--      </div>-->
-<!--    </div>-->
+	<table>
+	<tbody><tr>
+	<td><img id="myPicture" src="./Bolei Zhou_files/profile_correct.jpg" style="float:left; padding-right:10px" height="200px"></td>
+	<td>
+	<div id="DocInfo">
+		<h1>Bolei Zhou</h1>
+        Assistant Professor at CUHK<br>
+        Office: Room 717, Ho Sin-Hang Engineering Building, CUHK<br>
+        Email: <img src="./Bolei Zhou_files/email_cuhk.png" height="20px"><br>
+        <a href="https://people.csail.mit.edu/bzhou/CV_web.pdf">CV</a> � <a href="https://scholar.google.com/citations?user=9D4aG8AAAAAJ&amp;hl=en">Google Scholar</a> � <a href="https://github.com/metalbubble">Github</a> � <a href="https://www.linkedin.com/in/boleizhou">Linkedin</a> � <a href="https://www.zhihu.com/people/zhou-bo-lei/answers">Zhihu</a>
+	</div><br>
+    <!--
+    <div id="mit_logo">
+        <a href="http://www.mit.edu"><img src="image/mit.gif" height="170px" class="papericon" /></a>
+    </div>
+    -->
+	</td>
+	</tr>
+	</tbody></table>
 
-<!--        <div class="subtitle">-->
-<!--          News-->
-<!--        </div>-->
-<!--        <ul id="news">-->
-<!--          <li>(2019.1) Our new paper on semi-soft clustering for single cells is <a href="https://www.pnas.org/content/116/2/466" target="_blank">online</a>.-->
-<!--          </li>-->
-<!--          <li>(2018.12) Our new paper on Autism risk-factors comes out in <a href="http://science.sciencemag.org/content/362/6420/eaat6576" target="_blank">Science</a>. -->
-<!--          </li>-->
-<!--          <li>(2017.11) I gave a talk at <a href="http://icdm2017.bigke.org/" target="_blank">ICDM 2017</a> in New Orleans.-->
-<!--          </li>-->
-<!--          <li>(2017.10) Our <a href="https://arxiv.org/pdf/1609.08028.pdf" target="_blank">single cell paper</a> is accepted by the Annals of Applied Statistics.-->
-<!--          </li>-->
-<!--          <li>(2017.9) My intern project is featured on <a href="https://eng.uber.com/neural-networks-uncertainty-estimation/" target="_blank">Uber Engineering Blog</a>.-->
-<!--          </li>-->
-<!--        </ul>-->
-<!--        </div>-->
+	<h2>About Me</h2>
+    <ul>
+        <li>I am an Assistant Professor at the <a href="http://www.ie.cuhk.edu.hk/people/blzhou.shtml">Information Engineering Department</a> of <a href="https://people.csail.mit.edu/bzhou/=%22http://www.cuhk.edu.hk/english/index.html%22">The Chinese University of Hong Kong</a>. New homepage is at <a href="http://bzhou.ie.cuhk.edu.hk/">http://bzhou.ie.cuhk.edu.hk/</a>. </li>
+        <li>My research is on computer vision and machine learning, particularly visual scene understanding and interpretable AI systems.</li>
+        <li> My representative work includes the large-scale scene benchmarks <a href="http://places2.csail.mit.edu/">Places Database and Places-CNN</a>, <a href="http://groups.csail.mit.edu/vision/datasets/ADE20K/">ADE20K Dataset</a>, as well as neural network interpretation methods <a href="http://cnnlocalization.csail.mit.edu/">Class Activation Mapping (CAM)</a> and <a href="http://netdissect.csail.mit.edu/">Network Dissection</a>. Recently I investigate video scene understanding, with
+     work <a href="http://relation.csail.mit.edu/">Temporal Relational Reasoning</a> and <a href="http://moments.csail.mit.edu/">Moments in Time</a>.</li>
 
-<!--    <hr>-->
+    </ul>
 
-<!--    <div class="content">-->
-<!--      <div class="title">Research</div>-->
-<!--      <a class="anchor" id="research"></a>-->
+    <h2>Updates</h2>
+    <ul>
+        <li><strong>Please visit new webpage at <a href="http://bzhou.ie.cuhk.edu.hk/">http://bzhou.ie.cuhk.edu.hk/</a>. </strong>
+        </li><li>[2018/09/14] <a href="http://relation.csail.mit.edu/">Temporal Relation Network</a> is covered by <a href="http://news.mit.edu/2018/machine-learning-video-activity-recognition-0914">MIT News</a> as Today's Spotlight.
+        </li><li>[2018/07/03] The videos for CVPR'18 Tutorial on Interpretable Machine Learning is <a href="https://interpretablevision.github.io/">available</a>.</li>
+        <li>[2018/05/04] I defended my Ph.D. thesis. Defense talk titled Interpretable Representation Learning for Visual Intelligence is available in <a href="https://www.youtube.com/watch?v=J7Zz_33ZeJc">Youtube</a> or <a href="http://people.csail.mit.edu/bzhou/bolei_defense.mp4">Downlad</a>.</li>
+        <li>[2018/04/09] PyTorch implementation of scene parsing networks trained on ADE20K is <a href="https://github.com/CSAILVision/semantic-segmentation-pytorch">released</a>.</li>
+        <li>[2017/12/09] I will organize the <a href="https://interpretablevision.github.io/">Tutorial on Interpretable Machine Learning at CVPR'18</a>.</li>
+        <li>[2017/12/03] <a href="http://moments.csail.mit.edu/">Moments in Time Dataset</a> with 1 million videos from 339 actions is online! </li>
+        <li>[2017/12/03] Latest work on <a href="http://relation.csail.mit.edu/">temporal reasoning</a> in videos. Relation is all you need. </li>
+        <li>[2017/12/02] I am invited as panelist for the <a href="http://interpretable.ml/">NIPS'17 Interpretable Machine Learning Symposium</a>.</li>
+        <!--
+        <li>[2017/11/15] <a href="http://cnnlocalization.csail.mit.edu/">Class Activation Mapping</a> is used to <a href="https://news.stanford.edu/2017/11/15/algorithm-outperforms-radiologists-diagnosing-pneumonia/?linkId=44774396&linkId=44811912">interpret lung disease diagnosis</a> by researchers at Stanford.</li>
+        <li>[2017/09/04] <a href="http://places2.csail.mit.edu/demo.html">Demo of Places365-CNN</a> is updated, which could predict the scene categories, attributes, and the class activation map together. <a href="https://github.com/CSAILVision/places365/blob/master/run_placesCNN_unified.py">Source code in PyTorch</a> is available.</li>
+        <li>[2017/07/06] An invited talk at <a href="https://2017.icml.cc/">ICML'17</a> <a href="http://icmlviz.github.io/">Workshop on Visualization for Deep Learning</a> about interpreting deep visual representation. Here is the <a href="http://people.csail.mit.edu/bzhou/ppt/presentation_ICML_workshop.pdf">slide</a>. </li>
+        <li>[2017/07/01] <a href="http://news.mit.edu/2017/inner-workings-neural-networks-visual-data-0630">MIT News</a> and <a href="https://techcrunch.com/2017/06/30/mit-csail-research-offers-a-fully-automated-way-to-peer-inside-neural-nets/">Techcrunch</a> cover our Network Dissection work. </li>
+        <li>[2017/06/20] I am organizing the <a href="https://places-coco2017.github.io/">Joint Workshop for COCO and Places Challenge at ICCV'17</a>.</li>
+        -->
+    </ul>
 
-<!--      <div class="subtitle">Theory and Methodology</div>-->
+	<h2>Selected Projects and Publications</h2>
+	<table class="pub_table">
+	<tbody>
 
-<!--      <div class="block">-->
-<!--        <div class="abstract">-->
-<!--          <img class="project_img" src="images/plot-soup.png">-->
-<!--          <div class="right">-->
-<!--            <div class="research_title">-->
-<!--              Semi-soft clustering of single cell data-->
-<!--            </div>-->
-<!--            <p>-->
-<!--            We consider the clustering problem in single cell data with the existence of both (i) pure cells, each belongning to one single cluster, and (ii) mixed cells (transitional cells), that are transitioning between cell types. We propose SOUP, for Semi-sOft clUstering with Pure cells, which performs well at the hard-clustering problem for pure cell types and excels at identifying transitional cells with soft memberships. Notably, SOUP is derived under a generic additive noise model and can be versatile and applicable to a wider range of applications.-->
-<!--            </p>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--        <div class="publication">-->
-<!--			  <span class="emph">L. Zhu</span>, J. Lei, L. Klei, B. Devlin, K. Roeder (2019)<br>-->
-<!--			  Semi-soft clustering of single cell data.<br>-->
-<!--			  <i>Proceedings of the National Academy of Sciences Jan 2019, 116 (2) 466-471</i><br>-->
-<!--        (<a class="link" href="https://www.pnas.org/content/116/2/466" target="_blank">manuscript</a>)-->
-<!--			  (<a class="link" href="https://www.biorxiv.org/content/early/2018/10/21/285056" target="_blank">preprint</a>)-->
-<!--			  (<a class="link" href="https://github.com/lingxuez/SOUPR" target="_blank">code</a>)-->
-<!--        </div>-->
-<!--      </div>-->
-
-<!--      <div class="block">-->
-<!--        <div class="abstract">-->
-<!--          <img class="project_img" src="images/plot-embed.jpg">-->
-<!--          <div class="right">-->
-<!--            <div class="research_title">-->
-<!--              Uncertainties in neural networks-->
-<!--            </div>-->
-<!--            <p>-->
-<!--            At Uber, probabilistic time series forecasting is used for robust prediction of number of trips during special events, driver incentive allocation, as well as real-time anomaly detection across millions of metrics. Classical time series models are often hard to tune, scale, and add exogenous variables to. In this project, we proposed a novel end-to-end LSTM-based Bayesian deep model that provides time series prediction along with uncertainty estimation. This model has been successfully applied to large-scale time series anomaly detection at Uber. This work was completed during an internship.-->
-<!--            </p>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--        <div class="publication">-->
-<!--			  <span class="emph">L. Zhu</span>, N. Laptev (2017)<br>-->
-<!--			  Deep and confident prediction for time series at Uber.<br>-->
-<!--			  <i>ICDM'17 Workshop.</i><br>-->
-<!--        (<a class="link" href="https://ieeexplore.ieee.org/document/8215650" target="_blank">manuscript</a>)-->
-<!--			  (<a class="link" href="https://arxiv.org/pdf/1709.01907.pdf" target="_blank">preprint</a>)-->
-<!--			  (<a class="link" href="https://eng.uber.com/neural-networks-uncertainty-estimation/" target="_blank">blog post</a>)-->
-<!--        </div>-->
-<!--      </div>-->
+        <tr>
+           <td class="pub_td1"><img src="./Bolei Zhou_files/cover_unitablation.png" class="papericon"></td>
+           <td class="pub_td2"><u>Bolei Zhou</u>, Yiyou Sun, David Bau, and Antonio Torralba<br><b>Revisiting the Importance of Individual Units in CNNs via Ablation.</b><br>arXiv:1806.02891, 2018.<br>[<a href="https://arxiv.org/pdf/1806.02891.pdf">arXiv</a>]
+         </td></tr>
 
 
-<!--      <div class="block">-->
-<!--        <div class="abstract">-->
-<!--          <img class="project_img" src="images/plot-sc.png">-->
-<!--          <div class="right">-->
-<!--            <div class="research_title">-->
-<!--              Single cell RNA-seq modeling-->
-<!--            </div>-->
-<!--          	<p>-->
-<!--            Recent advances of single cell sequencing yield valuable insights about individual cells. However,-->
-<!--          	compared to traditional tissue-level bulk RNA-seq, analyzing single cell data is challenging because of high levels of technical noise. Here, we proposed a unified statistical framework for joint analysis of single cell and bulk RNA-seq data. Our hierarchical model borrows the strength from both data sources, identifies noisy entries in single cell data, and leads to a more accurate estimation of gene expression profiles.   -->
-<!--          	</p>-->
+        <tr>
+           <td class="pub_td1"><img src="./Bolei Zhou_files/cover_trn_stop.gif" class="papericon"></td>
+           <td class="pub_td2"><u>Bolei Zhou</u>, Alex Andonian, Aude Oliva, and Antonio Torralba<br><strong>Temporal Relational Reasoning in Videos.</strong><br>European Conference on Computer Vision (ECCV), 2018 (arXiv:1711.08496).<br>[<a href="https://people.csail.mit.edu/bzhou/publication/eccv18-TRN.pdf">PDF</a>][<a href="https://arxiv.org/pdf/1711.08496.pdf">arXiv</a>][<a href="http://relation.csail.mit.edu/">Webpage</a>][<a href="https://www.youtube.com/watch?v=D42erLb42_k">Demo Video</a>][<a href="https://github.com/metalbubble/TRN-pytorch">Code</a>][<a href="http://news.mit.edu/2018/machine-learning-video-activity-recognition-0914">MIT News</a>]
+         </td>
+        </tr>
 
-<!--          </div>-->
-<!--        </div>-->
-<!--        <div class="publication">-->
-<!--        <span class="emph">L. Zhu</span>, J. Lei, B. Devlin, K. Roeder (2018)<br>-->
-<!--			    A unified statistical framework for single cell and bulk RNA sequencing data.<br>-->
-<!--			    <i>Annals of Applied Statistics</i>, 12(1):609-632.<br>-->
-<!--          (<a class="link" href="https://projecteuclid.org/euclid.aoas/1520564486" target="_blank">manuscript</a>)-->
-<!--			    (<a class="link" href="https://arxiv.org/pdf/1609.08028.pdf" target="_blank">preprint</a>)-->
-<!--			    (<a class="link" href="https://github.com/lingxuez/scUnif" target="_blank">code</a>)-->
-<!--        </div>-->
-<!--      </div>-->
+        <tr>
+           <td class="pub_td1"><img src="./Bolei Zhou_files/cover_ibd.png" class="papericon"></td>
+           <td class="pub_td2"><u>Bolei Zhou</u>*, Yiyou Sun*, David Bau*, Antonio Torralba.<br>
+               <strong>Interpretable Basis Decomposition for Visual Explanation.</strong><br>European Conference on Computer Vision (ECCV), 2018.<br>[<a href="https://people.csail.mit.edu/bzhou/publication/eccv18-IBD">PDF</a>][<a href="https://github.com/metalbubble/IBD">Code(soon)</a>]
+         </td>
+        </tr>
 
-<!--      <div class="block">-->
-<!--        <div class="abstract">-->
-<!--          <img class="project_img" src="images/plot-sled.jpg">-->
-<!--          <div class="right">-->
-<!--            <div class="research_title">-->
-<!--              High-dimensional inference on covariance matrices-->
-<!--            </div>-->
-<!--          <p>-->
-<!--            Two-sample test for high-dimensional covariance matrices is a long-lasting and challenging statistical problem. Here, we proposed a novel perspective that utilizes the spectrum of the differential matrix, which is closely related with Sparse Principal Component Analysis. Our test remains powerful even when the signals are sparse and weak, and outperforms existing approaches under various practical scenarios. We successfully applied our method to the largest gene­ expression dataset comparing schizophrenia and control brains, and revealed intriguing patterns of gene-gene co­-expression change.-->
-<!--          	</p>-->
-<!--          </div>-->
-<!--        </div>-->
+        <tr>
+           <td class="pub_td1"><img src="./Bolei Zhou_files/cover_upernet.png" class="papericon"></td>
+           <td class="pub_td2">Tete Xiao*, Yingcheng Liu*, <u>Bolei Zhou</u>*, Yuning Jiang, Jian Sun<br>
+               <strong>Unified Perceptual Parsing for Scene Understanding.</strong><br>European Conference on Computer Vision (ECCV), 2018.<br>[<a href="https://people.csail.mit.edu/bzhou/publication/eccv18-segment.pdf">PDF</a>][<a href="https://github.com/CSAILVision/unifiedparsing">Code &amp; Data</a>]
+         </td>
+        </tr>
 
-<!--        <div class="publication">-->
-<!--			  <span class="emph">L. Zhu</span>, J. Lei, B. Devlin, K. Roeder (2017)<br>-->
-<!--			    Testing high-dimensional covariance matrices, with application to detecting schizophrenia risk genes.<br>-->
-<!--			    <i>Annals of Applied Statistics</i>, 11(3):1810-1831.<br>-->
-<!--          (<a class="link" href="https://projecteuclid.org/euclid.aoas/1507168849" target="_blank">manuscript</a>)-->
-<!--			    (<a class="link" href="https://arxiv.org/pdf/1606.00252.pdf" target="_blank">preprint</a>)	-->
-<!--			    (<a class="link" href="https://github.com/lingxuez/sLED" target="_blank">code</a>)-->
-<!--        </div>-->
-<!--      </div>-->
-<!--      -->
 
-<!--      <div class="block">-->
-<!--        <div class="abstract">-->
-<!--          <img class="project_img" src="images/plot-sbm.jpg">-->
-<!--          <div class="right">-->
-<!--            <div class="research_title">-->
-<!--              Network community recovery-->
-<!--            </div>-->
-<!--          	<p>-->
-<!--          	In this project, we study the problem of community recovery in stochastic block models. We show that a simple sample splitting trick can refine almost any approximately correct community recovery method to achieve exactly correct community recovery, when the expected node degrees are of order <i>log(n)</i> or higher. Our results simplify and extend some of the previous work on exact community recovery using sample splitting, and provide better theoretical guarantee for degree corrected stochastic block models.-->
-<!--          	</p>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--        <div class="publication">-->
-<!--			    J. Lei, <span class="emph">L. Zhu</span> (2017)<br>-->
-<!--			    Generic sample splitting for refined community recovery in degree corrected stochastic block models.-->
-<!--          <br>-->
-<!--			    <i>Statistica Sinica</i>, 27(2017):1639-1659.<br>-->
-<!--			    (<a class="link" href="https://arxiv.org/pdf/1411.1469.pdf" target="_blank">preprint</a>)-->
-<!--			    (<a class="link" href="https://github.com/lingxuez/splitSpectral" target="_blank">code</a>)-->
-<!--        </div>-->
-<!--      </div>-->
+        <tr>
+           <td class="pub_td1"><img src="./Bolei Zhou_files/cover_intrinsic.png" class="papericon"></td>
+           <td class="pub_td2">Wei-Chiu Ma, Hang Chu, <u>Bolei Zhou</u>, Raquel Urtasun, Antonio Torralba.<br>
+           <strong>Single Image Intrinsic Decomposition without a Single Intrinsic Image.</strong><br>European Conference on Computer Vision (ECCV), 2018.<br>[<a href="https://people.csail.mit.edu/bzhou/">PDF(soon)</a>]
+         </td>
+        </tr>
 
-<!--      <div class="subtitle">Application</div>-->
+        <tr>
+           <td class="pub_td1"><img src="./Bolei Zhou_files/cover_factorcnn.png" class="papericon"></td>
+           <td class="pub_td2">Yikang Li, Wanli Ouyang, <u>Bolei Zhou</u>, Yawen Cui, Jianping Shi, Xiaogang Wang.<br>
+           <strong>Factorizable Net: An Efficient Subgraph based Framework for Scene Graph Generation.</strong><br>European Conference on Computer Vision (ECCV), 2018.<br>[<a href="https://arxiv.org/pdf/1806.11538.pdf">PDF</a>]
+         </td>
+        </tr>
+        <tr>
+           <td class="pub_td1"><img src="./Bolei Zhou_files/cover_iros18.png" class="papericon"></td>
+           <td class="pub_td2">Jimmy Wu, <u>Bolei Zhou</u>, Rebecca Russell, Vincent Kee, Syler Wagner, Mitchell Hebert, Antonio Torralba, and David M.S. Johnson<br><strong>Real-Time Object Pose Estimation with Pose Interpreter Networks.</strong><br>International Conference on Intelligent Robots (IROS), 2018.<br>[<a href="https://people.csail.mit.edu/bzhou/publication/iros18-pose.pdf">PDF</a>][<a href="https://github.com/jimmyyhwu/pose-interpreter-networks">Code</a>][<a href="https://www.youtube.com/watch?v=9QBw1NCOOR0">Video</a>]</td>
+        </tr>
 
-<!--      <div class="block">-->
-<!--        <div class="abstract">-->
-<!--            <div class="application_title">-->
-<!--              Genome-wide de novo risk score implicates promoter variation in autism spectrum disorder.-->
-<!--            </div>-->
-<!--            <div class="publication">-->
-<!--              J. An*, K. Lin*, <span class="emph">L. Zhu</span>*, D. Werling*, S. Dong, H. Brand, H. Wang, X. Zhao, G. Schwartz, R. Collins, B. Currall, C. Dastmalchi, J. Dea, C. Duhn, M. Gilson, L. Klei, L. Liang, E. Markenscoff-Papadimitriou, S. Pochareddy, N. Ahituv, J. Buxbaum, H. Coon, M. Daly, Y. Kim, G. Marth, B. Neale, A. Quinlan, J. Rubenstein, N. Sestan, M. State, A. Willsey, M. Talkowski, B. Devlin, K. Roeder, S. Sanders (2018)-->
-<!--              <br><i>Science</i>, 362(6420):eaat6576. (*Equal contributions) <br>-->
-<!--              (<a class="link" href="http://science.sciencemag.org/content/362/6420/eaat6576/tab-article-info" target="_blank">manuscript</a>)-->
-<!--              (<a class="link" href="https://www.cs.cmu.edu/news/autism-risk-factors-identified-dark-matter-human-genome" target="_blank">news</a>) -->
-<!--            </div>-->
-<!--          </div>-->
-<!--      </div>-->
 
-<!--      <div class="block">-->
-<!--        <div class="abstract">-->
-<!--            <div class="application_title">-->
-<!--              An analytical framework for whole genome sequence data and its implications for autism spectrum disorder.-->
-<!--            </div>-->
-<!--            <div class="publication">-->
-<!--              D. Werling*, H. Brand*, J. An*, M. Stone*, <span class="emph">L. Zhu</span>*, J. Glessner, R. Collins, S. Dong, R. Layer, E. Markenscoff-Papadimitriou, A. Farrell, G. Schwartz,  H. Wang, B. Currall,  X. Zhao, J. Dea, C. Duhn, C. Erdman, M. Gilson, R. Yadav, R. Handsaker, S. Kashin, L. Klei, J. Mandell, T. Nowakowski, Y. Liu, S. Pochareddy, L. Smith, M. Walker, M. Waterman, X. He, A. Kriegstein, J. Rubenstein, N. Sestan, S. McCarroll, B. Neale, H. Coon, A. Willsey, J. Buxbaum, M. Daly, M. State, A. Quinlan, G. Marth, K. Roeder, B. Devlin, M. Talkowski, S. Sanders (2018)-->
-<!--              <br><i>Nature Genetics</i>, 50(5):727–736. (*Equal contributions) <br>-->
-<!--              (<a class="link" href="https://www.nature.com/articles/s41588-018-0107-y" target="_blank">manuscript</a>)-->
-<!--              (<a class="link" href="https://www.nature.com/articles/s41588-018-0113-0" target="_blank">news & views</a>) -->
-<!--			      </div>-->
-<!--          </div>-->
-<!--      </div>-->
+        <tr>
+           <td class="pub_td1"><img src="./Bolei Zhou_files/cover_thesis.png" class="papericon"></td>
+           <td class="pub_td2"><u>Bolei Zhou</u><br><b>Interpretable Representation Learning for Visual Intelligence.</b><br>PhD thesis submitted to MIT EECS, May 17, 2018.<br>Committee: Antonio Torralba, Aude Oliva, Bill Freeman.<br>[<a href="https://people.csail.mit.edu/bzhou/publication/thesis.pdf">PDF</a>][<a href="https://www.youtube.com/watch?v=J7Zz_33ZeJc">Defense Talk</a>]
+         </td></tr>
 
-<!--      <div class="block">-->
-<!--        <div class="abstract">-->
-<!--          <div class="application_title">-->
-<!--            Differential Activity of Transcribed Enhancers in the Prefrontal Cortex of 537 cases with Schizophrenia and Controls.-->
-<!--          </div>-->
-<!--          <div class="publication">-->
-<!--          M. Hauberg, J. Fullard, <span class="emph">L. Zhu</span>, A. Cohain, C. Giambartolomei, R. Misir, S. Reach, J. Johnson, M. Wang, M. Mattheisen, A. Børglum, B. Zhang, S. Sieberts, M. Peters, E. Domenici, E. Schadt, B. Devlin, P. Sklar, K. Roeder, P. Roussos (2018)-->
-<!--          <br><i>Molecular Psychiatry</i>.<br> -->
-<!--          (<a class="link" href="https://www.nature.com/articles/s41380-018-0059-8" target="_blank">manuscript</a>)-->
-<!--          </div>-->
-<!--        </div>-->
-<!--      </div>-->
 
-<!--    </div>-->
-<!--        -->
-<!--    <hr>-->
-<!--    -->
-<!--    <div class="content">-->
-<!--      <div class="title">Talks</div>-->
-<!--      <a class="anchor" id="talks"></a>-->
+        <tr>
+           <td class="pub_td1"><img src="./Bolei Zhou_files/cover_deepminer.png" class="papericon"></td>
+           <td class="pub_td2">Jimmy Wu, <u>Bolei Zhou</u>, Diondra Peck, Scott Hsieh, Vandana Dialani, Vasilis Syrgkanis, Lester Mackey, and Genevieve Patterson<br><b>DeepMiner: Discovering Interpretable Representations for Mammogram Classification and Explanation.</b><br>arXiv:1805.12323, 2018.<br>[<a href="https://arxiv.org/pdf/1805.12323.pdf">arXiv</a>]
+         </td></tr>
 
-<!--      <ul>-->
-<!--			  <li>-->
-<!--			  <i>Deep and confident prediction for time series at Uber</i> (talk).<br>-->
-<!--			  2017 International Conference on Data Mining Workshop (ICDM), New Orleans, LA.-->
-<!--			  </li>-->
+        <tr>
+           <td class="pub_td1"><img src="./Bolei Zhou_files/SPIE.png" class="papericon"></td>
+           <td class="pub_td2">Jimmy Wu, Diondra Peck, Scott Hsieh, Vandana Dialani, Constance D. Lehman, <u>Bolei Zhou</u>, Vasilis Syrgkanis, Lester Mackey, and Genevieve Patterson<br><b>Expert identification of visual primitives used by CNNs during mammogram classification.</b><br>SPIE Medical Imaging, 2018.<br>[<a href="https://people.csail.mit.edu/bzhou/publication/SPIE18.pdf">PDF</a>]
+         </td></tr>
 
-<!--			  <li>-->
-<!--			  <i>Estimating uncertainties in neural networks for time series prediction at Uber</i> (poster).<br>-->
-<!--			  2017 Uber’s Machine Learning Session, San Francisco, CA.-->
-<!--			  <span class="emph">(Best presentation award)</span>-->
-<!--			  </li>-->
+        <tr>
+           <td class="pub_td1"><img src="./Bolei Zhou_files/cover_vqavqg.png" class="papericon"></td>
+           <td class="pub_td2">Yikang Li, Nan Duan, <u>Bolei Zhou</u>, Xiao Chu, Wanli Ouyang, and Xiaogang Wang<br><b>Visual Question Generation as Dual Task of Visual Question Answering.</b><br>Computer Vision and Pattern Recognition (CVPR), 2018, <b>spotlight</b> (arXiv:1709.07192).<br>[<a href="https://arxiv.org/pdf/1709.07192.pdf">arXiv</a>][<a href="http://cvboy.com/publication/cvpr2018_iqan/">Webpage</a>][<a href="https://github.com/yikang-li/iQAN">Code</a>]
+         </td></tr>
 
-<!--			  <li>-->
-<!--			  <i>A two-sample test for high-dimensional covariance matrices via sparse principal component analysis</i> (special talk).<br>-->
-<!--			  2016 Joint Statistical Meetings (JSM), Chicago, IL. -->
-<!--			  <span class="emph">(Student paper award)</span>-->
-<!--			  </li>-->
+        <tr>
+           <td class="pub_td1"><img src="./Bolei Zhou_files/RRM.png" class="papericon"></td>
+           <td class="pub_td2">Bowen Pan, Wuwei Lin, Xiaolin Fang, Chaoqin Huang, <u>Bolei Zhou</u>, Cewu Lu<br><b>Recurrent Residual Module for Fast Inference in Videos.</b><br>Computer Vision and Pattern Recognition (CVPR), 2018.<br>[<a href="https://arxiv.org/pdf/1802.09723.pdf">arXiv</a>]
+         </td></tr>
 
-<!--			  <li>-->
-<!--			  <i>Detecting schizophrenia genes via a two-sample test for high-dimensional covariance matrices</i> (invited talk).<br>-->
-<!--			  2016 ICSA Applied Statistics Symposium, Atlanta, GA. -->
-<!--			  </li>-->
 
-<!--			  <li>-->
-<!--			  <i>On the prediction of risk for autism from common variants</i> (invited talk).<br>-->
-<!--			  2015 World Congress of Psychiatric Genetics (WCPG), Toronto, Canada. -->
-<!--			  </li>-->
 
-<!--			  <li>-->
-<!--			  <i>On the prediction of risk for autism from common variants</i> (poster).<br>-->
-<!--			  2015 American Society of Human Genetics Annual Meeting (ASHG), Baltimore, MD.-->
-<!--			  </li>-->
+        <tr>
+           <td class="pub_td1"><img src="./Bolei Zhou_files/cover_moments.png" class="papericon"></td>
+           <td class="pub_td2">Mathew Monfort, <u>Bolei Zhou</u>, Sarah Adel Bargal, Alex Andonian, Tom Yan, Kandan Ramakrishnan, Lisa Brown, Quanfu Fan, Dan Gutfreund, Carl Vondrick, Aude Oliva.<br><b>Moments in Time Dataset: one million videos for event understanding.</b><br>under revision of TPAMI, arXiv:1801.03150, 2018.<br>[<a href="https://arxiv.org/pdf/1801.03150.pdf">Tech Report</a>][<a href="http://moments.csail.mit.edu/">Website</a>][<a href="https://github.com/metalbubble/moments_models">Code+Model</a>]
+         </td></tr>
 
-<!--      </ul>-->
-<!--    </div>-->
+         <tr>
+           <td class="pub_td1"><img src="./Bolei Zhou_files/tpami_interpretation_screen.png" class="papericon"></td>
+           <td class="pub_td2"><u>Bolei Zhou</u>*, David Bau*, Aude Oliva, and Antonio Torralba.<br><strong>Interpreting Deep Visual Representations via Network Dissection.</strong><br><i>IEEE Transactions on Pattern Analysis and Machine Intelligence, June 2018 (arXiv:1711.05611, 2017). *-indicates equal contributions </i><br>[<a href="https://arxiv.org/pdf/1711.05611.pdf" target="_blank">arXiv</a>][<a href="http://netdissect.csail.mit.edu/" target="_blank">Webpage</a>][<a href="https://github.com/CSAILVision/NetDissect">Code</a>]
+         </td></tr>
 
-<!--    <hr>-->
 
-<!--    <div class="content">-->
-<!--      <div class="title">Awards</div>-->
-<!--      <a class="anchor" id="awards"></a>-->
-<!--      <ul>-->
-<!--        <li>-->
-<!--        Umesh K. Gavasakar Memorial Thesis Award in Statistics, Carnegie Mellon University, May 2018-->
-<!--        </li>-->
-<!--        <li>-->
-<!--        2018 Student of the Year, ASA Pittsburgh Chapter, April 2018-->
-<!--        </li>-->
-<!--        <li>-->
-<!--        Student Paper Award, Joint Statistical Meetings ASA Nonparametrics Section, July 2016-->
-<!--        </li>-->
-<!--        <li>-->
-<!--        Outstanding Graduate Award, Peking University, July 2013-->
-<!--        </li>   -->
-<!--      </ul>-->
-<!--    </div>-->
+        <tr>
+           <td class="pub_td1"><img src="./Bolei Zhou_files/cover_places2.png" class="papericon"></td>
+           <td class="pub_td2"><u>Bolei Zhou</u>, Agata Lapedriza, Aditya Khosla, Aude Oliva, and Antonio Torralba.<br><b>Places: A 10 Million Image Database for Scene Recognition.</b><br><i>IEEE Transactions on Pattern Analysis and Machine Intelligence, July 2017. </i><br>[<a href="http://places2.csail.mit.edu/PAMI_places.pdf" target="_blank">PDF</a>][<a href="http://places2.csail.mit.edu/" target="_blank">Places2 Dataset</a>][<a href="http://places2.csail.mit.edu/challenge.html" target="_blank">Challenge Page</a>][<a href="https://github.com/metalbubble/places365" target="_blank">Places365 CNN models</a>][<a href="http://places2.csail.mit.edu/demo.html" target="_blank">Demo</a>]
+         </td></tr>
 
-<!--    <hr>-->
-<!--    -->
-<!--    <div class="content">-->
-<!--      <div class="title">Experience</div>-->
-<!--      <a class="anchor" id="experience"></a>-->
 
-<!--      <div class="subtitle">Internship</div>-->
-<!--      <ul>-->
-<!--			  <li>-->
-<!--			  Data Scientist Intern @ Uber, May - Aug 2017-->
-<!--			  <br>-->
-<!--			  (see my intern project on -->
-<!--			  <a class="link" href="https://eng.uber.com/neural-networks-uncertainty-estimation/" target="_blank")>-->
-<!--			  Uber Engineering Blog</a> and in our -->
-<!--        <a class="link" href="https://arxiv.org/pdf/1709.01907.pdf" target="_blank")>-->
-<!--        ICDM workshop paper</a>)-->
-<!--			   </li>-->
-<!--			  <li>-->
-<!--			  Decision Analyst Intern @ PNC Financial Services, May - Aug 2015-->
-<!--			  </li>  -->
-<!--      </ul>-->
+       <tr>
+           <td class="pub_td1"><img src="./Bolei Zhou_files/cover_scenegraph.png" class="papericon"></td>
+           <td class="pub_td2">Yikang Li, Wanli Ouyang, <u>Bolei Zhou</u>, Kun Wang, and Xiaogang Wang<br><b>Scene Graph Generation from Objects, Phrases and Region Captions.</b><br>International Conference on Computer Vision (ICCV), 2017.<br>[<a href="https://people.csail.mit.edu/bzhou/publication/ICCV_scenegraph.pdf">PDF</a>][<a href="https://github.com/yikang-li/MSDN">Code</a>]
+         </td></tr>
 
-<!--      <div class="subtitle">Professional Service</div>-->
-<!--      <ul>-->
-<!--          <li>-->
-<!--          Founding member of <a class="link" href="http://www.stat.cmu.edu/help-network/" target="_blank">CMU Statistics department help network</a>, May 2017 &#45;&#45; May 2018-->
-<!--          </li>-->
+        <tr>
+           <td class="pub_td1"><img src="./Bolei Zhou_files/cover_openvoc.jpg" class="papericon"></td>
+           <td class="pub_td2">Hang Zhao, Xavier Puig, <u>Bolei Zhou</u>, Sanja Fidler, and Antonio Torralba<br><b>Open Vocabulary Scene Parsing.</b><br>International Conference on Computer Vision (ICCV), 2017.<br><i>(arXiv:1703.08769). </i><br>[<a href="https://people.csail.mit.edu/bzhou/publication/ICCV_openvoc.pdf">PDF</a>][<a href="https://arxiv.org/pdf/1703.08769.pdf">arXiv</a>][<a href="http://sceneparsing.csail.mit.edu/openvoc/">Webpage</a>]
+         </td></tr>
 
-<!--          <li>-->
-<!--          Program committee of ICDM 2018 Workshop on <a class="link" href="http://www.bigdatalab.ac.cn/~dsbda/2018/" target="_blank">Data Science and Big Data Analytics</a>-->
-<!--          </li>-->
+        <tr>
+           <td class="pub_td1"><img src="./Bolei Zhou_files/cover_sceneparsing_cvpr2017.png" class="papericon"></td>
+           <td class="pub_td2"><u>Bolei Zhou</u>, Hang Zhao, Xavier Puig, Sanja Fidler, Adela Barriuso and Antonio Torralba.<br><b>Scene Parsing through ADE20K Dataset.</b><br><i>Computer Vision and Pattern Recognition (CVPR), 2017. </i><br>[<a href="https://people.csail.mit.edu/bzhou/publication/scene-parse-camera-ready.pdf">PDF</a>][<a href="http://groups.csail.mit.edu/vision/datasets/ADE20K/" target="_blank">Dataset</a>][<a href="http://sceneparsing.csail.mit.edu/">Benchmark Page</a>][<a href="http://sceneparsing.csail.mit.edu/index_challenge.html" target="_blank">Challenge Page</a>][<a href="https://github.com/CSAILVision/sceneparsing" target="_blank">Toolkit&amp;Code</a>][<a href="http://scenesegmentation.csail.mit.edu/" target="_blank">Demo</a>]
 
-<!--          <li>-->
-<!--          Reviewer for Journal of the American Statistical Association, Nucleic Acids Research, Statistical Analysis and Data Mining, Biometrical Journal, IEEE Transactions on Neural Networks and Learning Systems, Information Fusion-->
-<!--          </li>-->
-<!--      </ul>-->
+        </td></tr>
 
-<!--&lt;!&ndash;       <div class="subtitle">Courses</div>-->
-<!--      <ul>-->
-<!--      <li>36/10-701 -->
-<!--      <a class="link" href="https://alex.smola.org/teaching/cmu2013-10-701" target="_blank">Machine Learning</a>-->
-<!--      </li>-->
-<!--      -->
-<!--      <li>36/10-702 -->
-<!--      <a class="link" href="http://www.stat.cmu.edu/~larry/=sml" target="_blank">Statistical Machine Learning</a>-->
-<!--      </li>-->
+       <tr>
+           <td class="pub_td1"><img src="./Bolei Zhou_files/cover_interpretability_cvpr2017.png" class="papericon"></td>
+           <td class="pub_td2">David Bau*, <u>Bolei Zhou</u>*, Aditya Khosla, Aude Oliva, and Antonio Torralba.<br><b>Network Dissection: Quantifying Interpretability of Deep Visual Representations.</b><br><i>Computer Vision and Pattern Recognition (CVPR), 2017. as <b>oral</b>. *-indicates equal contribution. </i><br>[<a href="http://netdissect.csail.mit.edu/final-network-dissection.pdf">PDF</a>][<a href="https://arxiv.org/pdf/1704.05796.pdf">arXiv</a>][<a href="http://netdissect.csail.mit.edu/">webpage</a>][<a href="https://people.csail.mit.edu/bzhou/">code</a>][<a href="https://www.youtube.com/watch?v=Xy6RcjXMa2c">Talk Video</a>]<br>
+         </td></tr>
 
-<!--      <li>36/10-705-->
-<!--      <a class="link" href="http://www.stat.cmu.edu/~jinglei/syllabus_f13.pdf" target="_blank">Intermediate Statistics</a>-->
-<!--      </li>-->
+        <tr>
+           <td class="pub_td1"><img src="./Bolei Zhou_files/cover_person_cvpr2017.png" class="papericon"></td>
+           <td class="pub_td2">Shuang Li, Tong Xiao, Hongsheng Li, <u>Bolei Zhou</u>, Dayu Yue, and Xiaogang Wang.<br><b>Person Search with Natural Language Description.</b><br><i>Computer Vision and Pattern Recognition (CVPR), 2017. </i><br>[<a href="https://arxiv.org/pdf/1702.05729.pdf">PDF</a>][<a href="http://xiaotong.me/static/projects/person-search-language/dataset.html">Dataset</a>]
+         </td></tr>
 
-<!--      <li>36-707 Regression Analysis</li>-->
+        <tr>
+           <td class="pub_td1"><img src="./Bolei Zhou_files/cover_segicp.png" class="papericon"></td>
+           <td class="pub_td2">J. Wong, V. Kee, T. Le, S.Wagner, G. Mariottini, A. Schneider, L. Hamilton, R. Chiaplkatty, M. Herbert, D. Johnson<br> J. Wu, <u>B. Zhou</u>, and A. Torralba.<br><b>SegICP: Integrated Deep Semantic Segmentation and Pose Estimation.</b><br><i>IEEE International Conference on Intelligent Robots and Systems (IROS'17) as <b>Oral</b> (arXiv:1703.01661) </i><br>[<a href="https://arxiv.org/pdf/1703.01661.pdf">PDF</a>]
+         </td></tr>
 
-<!--      <li>36/10-725 -->
-<!--      <a class="link" href="http://www.stat.cmu.edu/~ryantibs/convexopt-S15" target="_blank">Convex Optimization</a>-->
-<!--      </li>-->
+       <tr>
+           <td class="pub_td1"><img src="./Bolei Zhou_files/cover_sceneparsing.jpg" class="papericon"></td>
+           <td class="pub_td2"><u>Bolei Zhou</u>, Hang Zhao, Xavier Puig, Tete Xiao, Sanja Fidler, Adela Barriuso and Antonio Torralba.<br><b>Semantic Understanding of Scenes through ADE20K Dataset.</b><br><i>arXiv:1608.05442, 2016. </i><br>[<a href="https://arxiv.org/pdf/1608.05442.pdf" target="_blank">PDF</a>][<a href="http://groups.csail.mit.edu/vision/datasets/ADE20K/" target="_blank">Dataset</a>][<a href="http://sceneparsing.csail.mit.edu/">Benchmark Page</a>][<a href="http://sceneparsing.csail.mit.edu/index_challenge.html" target="_blank">Challenge Page</a>][<a href="https://github.com/CSAILVision/sceneparsing" target="_blank">Toolkit&amp;Code</a>][<a href="http://scenesegmentation.csail.mit.edu/" target="_blank">Demo</a>]
 
-<!--      <li>36-750 Statistical Computing</li>-->
+         </td></tr>
 
-<!--      <li>36-752-->
-<!--      <a class="link" href="http://www.stat.cmu.edu/~jinglei/spring14/syllabus_36752_s14.pdf" target="_blank">Advanced Probability Overview</a>-->
-<!--      </li>-->
+       <tr>
+                <td class="pub_td1"><img src="./Bolei Zhou_files/cover_CAM.jpg" class="papericon"></td>
+               <td class="pub_td2"><u>Bolei Zhou</u>, Aditya Khosla, Agata Lapedriza, Aude Oliva, and Antonio Torralba<br><b>Learning Deep Features for Discriminative Localization.</b><br><i>Computer Vision and Pattern Recognition (CVPR), 2016 (arXiv:1512.04150)</i><br>[<a href="https://people.csail.mit.edu/bzhou/publication/Zhou_Learning_Deep_Features_CVPR_2016_paper.pdf" target="_blank">PDF</a>] [<a href="http://arxiv.org/pdf/1512.04150.pdf" target="_blank">arXiv</a>][<a href="http://cnnlocalization.csail.mit.edu/" target="_blank">Project Page</a>][<a href="https://www.youtube.com/watch?v=fZvOy0VXWAI" target="_blank">Video of CNN shifting its attention</a>]
 
-<!--      <li>36-755 Advanced Statistical Theory</li>-->
+        </td></tr>
 
-<!--      <li>11-441 -->
-<!--      <a class="link" href="https://lti.cs.cmu.edu/intranet/lti-course-listings#11741" target="_blank">-->
-<!--      Machine Learning for Text Mining-->
-<!--      </a>-->
-<!--      </li>-->
+      <tr>
+           <td class="pub_td1"><img src="./Bolei Zhou_files/cover_intraclass.png" class="papericon"></td>
+           <td class="pub_td2">Donglai Wei, <u>Bolei Zhou</u>, Antonio Torralba, William Freeman<br><b>Understanding Intra-Class Knowledge inside CNN.</b><br><i>arXiv:1507.02379, 2015. </i><br>[<a href="http://arxiv.org/pdf/1507.02379.pdf" target="_blank">PDF</a>][<a href="http://vision03.csail.mit.edu/cnn_art/index.html" target="_blank">Page</a>][<a href="https://github.com/donglaiw/mNeuron/" target="_blank">Code</a>]
 
-<!--      <li>10-605 -->
-<!--      <a class="link" href="http://curtis.ml.cmu.edu/w/courses/index.php/Machine_Learning_with_Large_Datasets_10-605_in_Fall_2016" target="_blank">-->
-<!--      Machine Learning with Large Datasets-->
-<!--      </a>-->
-<!--      </li>-->
+         </td></tr>
 
-<!--      <li>10-707 -->
-<!--      <a class="link" href="https://www.cs.cmu.edu/~rsalakhu/10707/" target="_blank">-->
-<!--      Topics in Deep Learning-->
-<!--      </a>-->
-<!--      (check out our final project-->
-<!--      <a class="link" href="https://github.com/lingxuez/v2v-style-transfer" target="_blank">-->
-<!--      here-->
-<!--      </a>)-->
-<!--      </li>-->
 
-<!--      <li>10-708 -->
-<!--      <a class="link" href="https://www.cs.cmu.edu/~epxing/Class/10708-17/" target="_blank">-->
-<!--      Probabilistic Graphical Models-->
-<!--      </a>-->
-<!--      </li>-->
+        <tr>
+           <td class="pub_td1"><img src="./Bolei Zhou_files/cover_vqa.jpg" class="papericon"></td>
+           <td class="pub_td2"><u>Bolei Zhou</u>, Yuandong Tian, Sainbar Suhkbaatar, Arthur Szlam, Rob Fergus<br><b>Simple Baseline for Visual Question Answering.</b><br><i>arXiv:1512.02167, 2015. </i><br>[<a href="http://arxiv.org/pdf/1512.02167.pdf" target="_blank">PDF</a>][<a href="http://visualqa.csail.mit.edu/" target="_blank">Demo</a>][<a href="https://github.com/metalbubble/VQAbaseline/" target="_blank">Code</a>]
 
-<!--      <li>15-826 -->
-<!--      <a class="link" href="https://www.cs.cmu.edu/~christos/courses/826.S17/" target="_blank">-->
-<!--      Multimedia Databases and Data Mining-->
-<!--      </a>-->
-<!--      (check out our final project-->
-<!--      <a class="link" href="https://github.com/lingxuez/SQLdcube" target="_blank">-->
-<!--      here-->
-<!--      </a>)-->
-<!--      </li>-->
-<!--      </ul>-->
+         </td></tr>
 
-<!--      <div class="subtitle">Teaching Assistant</div>-->
-<!--      <ul>-->
-<!--        <li>(2014 Spring) 46-929 Financial Time Series Analysis</li>-->
-<!--        <li>(2014 Spring) 46-926 Statistical and Machine Learning Methods for Financial Data</li>-->
-<!--        <li>(2013 Fall) 46-921 Introduction to Probability</li>-->
-<!--        <li>(2013 Fall) 46-923 Introduction to Statistical Inference</li>-->
-<!--      </ul>-->
-<!--    &ndash;&gt;-->
+         <tr>
+              <td class="pub_td1"><img src="./Bolei Zhou_files/cover_zi.png" class="papericon"></td>
+              <td class="pub_td2">Zi Wang, <u>Bolei Zhou</u>, Stephanie Jegelka<br><b>Optimization as Estimation with Gaussian Processes in Bandit Settings.</b><br><i>Artificial Intelligence and Statistics (AISTATS'16) as <strong>oral</strong>, 2016. (arXiv:1510.06423)</i><br>[<a href="http://arxiv.org/abs/1510.06423" target="_blank">PDF</a>][<a href="http://zi-wang.com/gp-est/" target="_blank">Project</a>][<a href="https://github.com/zi-w/GP-EST" target="_blank">Code</a>]
 
-<!--    </div> -->
-<!--  </div>-->
-<!--  <div style="margin-top: 10px; text-align: center; font-size: 14px;">-->
-<!--  Copyright &copy; 2015 - 2019, Lingxue Zhu. All rights reserved.<br>-->
-<!--  Last Updated: April 13, 2019-->
-<!--  </div>-->
+        </td></tr>
 
-<!--	&lt;!&ndash; Start of StatCounter Code for Default Guide &ndash;&gt;-->
-<!--	<script type="text/javascript">-->
-<!--		var sc_project=10595714; -->
-<!--		var sc_invisible=1; -->
-<!--		var sc_security="ee39bc4f"; -->
-<!--		var scJsHost = (("https:" == document.location.protocol) ?-->
-<!--			"https://secure." : "http://www.");-->
-<!--		document.write("<sc"+"ript type='text/javascript' src='" +-->
-<!--			scJsHost+-->
-<!--			"statcounter.com/counter/counter.js'></"+"script>");-->
-<!--	</script>-->
-<!--	<noscript><div class="statcounter"><a title="shopify visitor-->
-<!--		statistics" href="http://statcounter.com/shopify/"-->
-<!--		target="_blank"><img class="statcounter"-->
-<!--		src="http://c.statcounter.com/10595714/0/ee39bc4f/1/"-->
-<!--		alt="shopify visitor statistics"></a></div></noscript>-->
-<!--		&lt;!&ndash; End of StatCounter Code for Default Guide &ndash;&gt;-->
+        <tr>
+                <td class="pub_td1"><img src="./Bolei Zhou_files/cover_visualization.jpg" class="papericon"></td>
+               <td class="pub_td2"><u>Bolei Zhou</u>, Aditya Khosla, Agata Lapedriza, Aude Oliva, and Antonio Torralba<br><b>Object Detectors Emerge in Deep Scene CNNs.</b><br><i>International Conference on Learning Representations (ICLR) as <strong>oral</strong>, 2015.(arXiv:1412.6856) </i><br>[<a href="http://arxiv.org/pdf/1412.6856.pdf" target="_blank">PDF</a>][<a href="http://places.csail.mit.edu/" target="_blank">Project Page</a>][<a href="http://places.csail.mit.edu/visualization/" target="_blank">More Visualization</a>][<a href="https://github.com/metalbubble/unitvisseg">Code</a>]
 
-<!--</body>-->
-</html>
+        </td></tr>
+
+
+        <tr>
+                <td class="pub_td1"><img src="./Bolei Zhou_files/cover_concept.jpg" class="papericon"></td>
+               <td class="pub_td2"><u>Bolei Zhou</u>, Vignesh Jagadeesh, and Robinson Piramuthu<br><b>ConceptLearner: Discovering Visual Concepts from Weakly Labeled Image Collections.</b><br><i>Computer Vision and Pattern Recognition (CVPR), 2015.(arXiv:1411.5319)</i><br>[<a href="http://conceptlearner.csail.mit.edu/conceptlearner_final.pdf" target="_blank">PDF</a>][<a href="http://conceptlearner.csail.mit.edu/" target="_blank">Project Page &amp; Demo</a>]
+
+
+        </td></tr>
+
+        <tr>
+                <td class="pub_td1"><img src="./Bolei Zhou_files/cover_nips2014.jpg" class="papericon"></td>
+                <td class="pub_td2"><u>Bolei Zhou</u>, Agata Lapedriza, Jianxiong Xiao, Antonio Torralba, and Aude Oliva<br><b>Learning Deep Features for Scene Recognition using Places Database.</b><br><i>Advances in Neural Information Processing Systems 27 (NIPS) <b>spotlight</b></i>, 2014.<br>[<a href="http://places.csail.mit.edu/places_NIPS14.pdf" target="_blank">PDF</a>][<a href="http://places.csail.mit.edu/" target="_blank">Project Page</a>][<a href="http://places2.csail.mit.edu/demo.html" target="_blank">Demo</a>]
+
+        </td></tr>
+
+	<tr>
+		<td class="pub_td1"><a href="http://cityimage.csail.mit.edu/"><img src="./Bolei Zhou_files/boston_perception.jpg" class="papericon"></a></td>
+		<td class="pub_td2"><u>Bolei Zhou</u>, Liu Liu, Aude Oliva and Antonio Torralba<br><b>Recognizing City Identity via Attribute Analysis of Geo-tagged Images.</b><br><i> Proceedings of 13th European Conference on Computer Vision (ECCV) </i>, 2014.<br>[<a href="https://people.csail.mit.edu/bzhou/project/eccv2014/ECCV14_cityperception.pdf" target="_blank">PDF</a>][<a href="http://cityimage.csail.mit.edu/" target="_blank">Project Page</a>]<br>
+        Liu Liu, <u>Bolei Zhou</u>, Jinhua Zhao, Brent D. Ryan<br><b>C-IMAGE: City Cognitive Mapping through Geo-tagged Photos</b><br><i>GeoJournal, Springer</i>, 2016.<br>[<a href="https://people.csail.mit.edu/bzhou/project/eccv2014/c-image.pdf" target="_blank">PDF</a>]<br>
+	</td></tr>
+
+	<tr>
+		<td class="pub_td1"><a href="http://mmlab.ie.cuhk.edu.hk/project/collectiveness/"><img src="./Bolei Zhou_files/cover_cvpr2013.jpg" class="papericon"></a></td>
+		<td class="pub_td2"><u>Bolei Zhou</u>, Xiaoou Tang, Hepeng Zhang and Xiaogang Wang<br><b>Measuring Crowd Collectiveness.</b><br><i> IEEE transaction on Pattern Analysis and Machine Intelligence (PAMI)</i>, 2014.<br><i>  IEEE Conference on Computer Vision and Pattern Recognition (CVPR) <strong>oral</strong></i>, 2013.<br>[<a href="https://people.csail.mit.edu/bzhou/project/cvpr2013/final_collectiveness.pdf" target="_blank">PDF(CVPR)</a>][<a href="https://people.csail.mit.edu/bzhou/project/cvpr2013/pami.pdf" target="_blank">PDF(TPAMI)</a>][<a href="http://mmlab.ie.cuhk.edu.hk/project/collectiveness/">Project Page</a>]
+	</td></tr>
+
+	<tr>
+		<td class="pub_td1"><img src="./Bolei Zhou_files/cover_cvpr2012.jpg" class="papericon"></td>
+		<td class="pub_td2"><u>Bolei Zhou</u>, Xiaoou Tang and Xiaogang Wang.<br><b>Learning Collective Crowd Behaviors with Dynamic Pedestrian-Agents.</b><br><i> International Journal of Computer Vision (IJCV)</i>, 2014.<br><i>  IEEE Conference on Computer Vision and Pattern Recognition (CVPR) <strong>oral</strong></i>, 2012.<br>[<a href="https://people.csail.mit.edu/bzhou/project/cvpr2012/zhoucvpr2012.pdf">PDF(CVPR)</a>] [<a href="http://www.ee.cuhk.edu.hk/~xgwang/papers/zhouTWijcv14.pdf" target="_blank">PDF(IJCV)</a>][<a href="http://mmlab.ie.cuhk.edu.hk/project/dynamicagent/" target="_blank">Project Page</a>]
+	</td></tr>
+
+	<tr>
+		<td class="pub_td1"><a href="http://mmlab.ie.cuhk.edu.hk/project/coherentfiltering/"><img src="./Bolei Zhou_files/cover_eccv2012.jpg" class="papericon"></a></td>
+		<td class="pub_td2"><u>Bolei Zhou</u>, Xiaoou Tang and Xiaogang Wang.<br><b>Coherent Filtering: Detecting Coherent Motions from Crowd Clutters.</b><br><i> In Proceedings of 12th European Conference on Computer Vision (ECCV)</i>, 2012.<br>[<a href="https://people.csail.mit.edu/bzhou/publication/boleieccv2012.pdf">PDF</a>] [<a href="http://mmlab.ie.cuhk.edu.hk/project/coherentfiltering/">Project Page</a>]
+	</td></tr>
+
+	<tr>
+		<td class="pub_td1"><a href="http://mmlab.ie.cuhk.edu.hk/project/randomfield/"><img src="./Bolei Zhou_files/cover_cvpr2011.jpg" class="papericon"></a><a></a></td>
+		<td class="pub_td2"><u>Bolei Zhou</u>, Xiaogang Wang and Xiaoou Tang.<br><b>Random Field Topic Model for Semantic Region Analysis in Crowded Scenes from Tracklets.</b><br><i>IEEE Conference on Computer Vision and Pattern Recognition (CVPR)</i>, 2011.<br>[<a href="https://people.csail.mit.edu/bzhou/publication/boleicvpr2011.pdf" target="_blank">PDF</a>][<a href="http://mmlab.ie.cuhk.edu.hk/project/randomfield/" target="_blank">Project Page</a>]
+	</td></tr>
+    <tr>
+        <td></td>
+        <td><strong><a href="https://scholar.google.com/citations?user=9D4aG8AAAAAJ&amp;hl=en">Go to Google Scholar for full publication list</a></strong></td>
+    </tr>
+	</tbody></table>
+    <h2>Honors</h2>
+        <ul>
+            <li><a href="https://research.fb.com/fellows/zhou-bolei/">Facebook Fellowship Award 2016-2018</a></li>
+            <li>BRC &amp; LING Fellowship Award 2017</li>
+            <li>MIT Ho-Ching and Han-Ching Fund Award 2013</li>
+            <li>MIT Greater China Computer Science Fellowship 2013</li>
+            <li><a href="http://www.ie.cuhk.edu.hk/lnews/13-03-01.shtml">CUHK  Outstanding Thesis Award 2012</a></li>
+            <li><a href="http://research.microsoft.com/en-us/collaboration/global/asia-pacific/talent/fellows.aspx#2011" target="_blank">Microsoft Research Asia Fellowship 2011</a></li>
+        </ul>
+
+    <h2>Media coverage</h2>
+    <ul>
+        <li><a href="https://venturebeat.com/2018/09/14/mit-csail-designs-ai-that-can-track-objects-over-time/">VentureBeat</a>: MIT CSAIL designs AI that can track objects over time.</li>
+        <li><a href="http://news.mit.edu/2018/machine-learning-video-activity-recognition-0914">MIT News</a>: Helping computers fill in the gaps between video frames.</li>
+        <li><a href="https://qz.com/1022156/mit-researchers-can-now-track-artificial-intelligences-decisions-back-to-single-neurons/">Quartz</a>: Track AI decisions back to single neurons.</li>
+        <li><a href="http://news.mit.edu/2017/inner-workings-neural-networks-visual-data-0630">MIT News</a>: Peering into neural networks.</li>
+        <li><a href="https://techcrunch.com/2017/06/30/mit-csail-research-offers-a-fully-automated-way-to-peer-inside-neural-nets/">TechCrunch</a>: A fully automated way to peer inside neural networks.</li>
+        <li><a href="https://www.csail.mit.edu/csail_computer_vision_team_leads_scene_parsing_challenge%20">MIT CSAIL News</a>: Scene parsing and scene classification challenges.</li>
+        <li><a href="http://techcrunch.com/2015/05/08/ai-project-designed-to-recognize-scenes-surprises-by-identifying-objects-too/" target="_blank">TechCrunch</a> and <a href="http://newsoffice.mit.edu/2015/visual-scenes-object-recognition-0508" target="_blank">MIT News</a>: Object detectors emerge in CNNs.</li>
+    </ul>
+
+    <h2>Datasets &amp; Benchmarks</h2>
+    <ul>
+        <li><a href="http://moments.csail.mit.edu/">Moments in Time</a>: 1-million video dataset for video scene understanding.</li>
+        <li><a href="http://placeschallenge.csail.mit.edu/">Places Challenge 2017</a>: instance segmentation, scene parsing, and semantic boundary detection</li>
+        <li><a href="http://places2.csail.mit.edu/">Places Database</a>: 10 million image database for scene recognition</li>
+        <li><a href="https://github.com/CSAILVision/miniplaces">Mini-Places</a>: An educational tool for deep learning in computer vision </li>
+        <li><a href="http://sceneparsing.csail.mit.edu/">MIT Scene Parsing Benchmark</a>: full scene semantic segmentation dataset</li>
+        <li><a href="http://groups.csail.mit.edu/vision/datasets/ADE20K/">ADE20K dataset</a>: Pixel-wise annotated dataset for semantic scene understanding </li>
+    </ul>
+	<h2>Open-source softwares</h2>
+	<ul>
+        <li><a href="https://github.com/CSAILVision/semantic-segmentation-pytorch">Semantic Segmentation in PyTorch</a>: an efficient implementation of scene parsing networks trained on ADE20K in PyTorch.
+        </li><li><a href="https://github.com/CSAILVision/NetDissect">Network Dissection</a>: Network visualization and annotation toolkit.
+        </li><li><a href="https://github.com/metalbubble/unitvisseg">CNN Visualizer</a>: Neuron Visualization and Segmentation toolkit for deep CNNs.
+        </li><li><a href="https://github.com/metalbubble/places365">Places365-CNNs</a>: scene recognition networks on Places365 with <a href="https://github.com/metalbubble/places365/tree/master/docker">docker container</a>.</li>
+        <li><a href="https://github.com/metalbubble/VQAbaseline/">iBOWIMG</a>: visual question answering baseline code in Torch.</li>
+        <li><a href="https://github.com/metalbubble/CAM">CAM</a>: algorithm package for generating class-specific saliency map for CNN.</li>
+	    <li><a href="https://github.com/metalbubble/GoSpark">GoSpark</a>: implementation of Spark, an in-memory distributed computation framework, in Golang [<a href="https://people.csail.mit.edu/bzhou/publication/report_spark.pdf">Report</a>].</li>
+        <li><a href="https://github.com/metalbubble/GKLT">gKLT tracker</a>: algorithm package for extracting trajectories from videos with KLT features.</li>
+        <li><a href="https://github.com/metalbubble/collectiveness">Collectiveness descriptor</a>: a metric for crowd system order and the simulation of Self-Driven Particles. </li>
+        <li><a href="https://github.com/metalbubble/CohFilter">Coherent filtering</a>: algorithm package for detecting coherent motions in time-series data.</li>
+        <li><a href="https://github.com/metalbubble/RF_topic">Random field topic model</a>: C++ implementation of MRF on LDA with Gibbs sampling inference.</li>
+    </ul>
+
+    <h2>Professional activities</h2>
+    <ul>
+        <li>Organizer of the <a href="https://interpretablevision.github.io/">Tutorial on Interpretable Machine Learning for Computer Vision</a> at CVPR'18.</li>
+        <li>Panelist for the <a href="http://interpretable.ml/">NIPS'17 Interpretable Machine Learning Symposium</a>.</li>
+        <li>Co-Organizer of the <a href="https://places-coco2017.github.io/">Joint COCO and Places Recognition Challenge Workshop</a> at ICCV'17.</li>
+        <li>Organizer of the <a href="http://placeschallenge.csail.mit.edu/">Places Challenge 2017</a> at ICCV'17.</li>
+        <li>Organizer of the <a href="http://deeplearning.csail.mit.edu/">Tutorial on Deep Learning for Objects and Scenes</a> at CVPR'17.</li>
+        <li>Organizer of the <a href="http://sunw.csail.mit.edu/">5th Scene Understanding Workshop</a> at CVPR'17</li>
+        <li>Organizer of the <a href="http://places2.csail.mit.edu/results2016.html">Places365 Challenge 2016</a> and <a href="http://sceneparsing.csail.mit.edu/index_challenge.html">Scene Parsing Challenge 2016</a> at ECCV'16.</li>
+        <li>Co-organizer of <a href="http://image-net.org/challenges/LSVRC/2016/index">ILSVRC'16 challenge workshop</a> at ECCV'16
+        </li><li>Organizer of the <a href="http://places2.csail.mit.edu/results2015.html">Places Challenge 2015</a> in ICCV'15.</li>
+        <li>Conference reviewer for ICCV'17, BMVC'17, CVPR'17, ACCV'16, ECCV'16, CVPR'16, ICCV'15, CVPR'15, ECCV'14, ACCV'14.</li>
+	    <li>Journal reviewer for TPAMI, IJCV, The visual computer, Computer Vision and Image Understanding, IEEE Trans on NNLS, IEEE Trans on IP, IEEE Trans on SMC, IEEE Trans on CSVT, PLOS ONE, Pattern Recognition.</li>
+        <li>Teaching Assistant for MIT course <a href="http://6.869.csail.mit.edu/fa15" target="_blank">Advances in Computer Vision</a>. In the course a <a href="http://6.869.csail.mit.edu/fa15/project.html" target="_blank">Mini-Places Scene Classification Challenge</a> is hosted for educational purpose.</li>
+        <li>Chair of the <a href="https://sites.google.com/view/visionseminar">MIT Vision Seminar</a>.</li>
+        <li>Internships at Facebook AI Research, eBay Research Labs, Microsoft Research Asia, and Barclays Capital.</li>
+    </ul>
+    <h2>Talks</h2>
+    <ul>
+        <li><a href="https://people.csail.mit.edu/bzhou/ppt/presentation_ICML_workshop.pdf">Interpreting Deep Visual Representations</a> at <a href="http://icmlviz.github.io/">Workshop on Visualization for Deep Learning</a>, ICML'17, Sydney.</li>
+        <li><a href="https://people.csail.mit.edu/bzhou/ppt/presentation_CVPR17_oraltalk.pdf">Network Dissection: Quantifying the Interpretability of Deep Visual Representations</a>, CVPR'17, Hawaii.</li>
+        <li><a href="http://deeplearning.csail.mit.edu/">Tutorial on the Deep Learning for Objects and Scenes</a>, CVPR'17, Hawaii.</li>
+        <li><a href="https://people.csail.mit.edu/bzhou/ppt/understandCNN_tufts.pdf">Understand and Leverage the Internal Representations of CNNs</a> at Tufts, Cornell Tech, Harvard. </li>
+        <li><a href="https://people.csail.mit.edu/bzhou/publication/scene_challenges2016.pdf">Challenges in Deep Sceen Understanding</a> at ECCV'16 ILSVRC and COCO joint workshop, Oct. 2016, Amsterdam.</li>
+        <li><a href="http://places.csail.mit.edu/slide_iclr2015.pdf">Object Detectors Emerge in Deep Scene CNNs</a> at ICLR'15, May 2015, San Diego.</li>
+        <li><a href="https://people.csail.mit.edu/bzhou/">Learning Deep Features for Scene Recognition</a> at NIPS'14, Dec. 2014, Montreal.</li>
+        <li><a href="http://mmlab.ie.cuhk.edu.hk/projects/collectiveness/presentation_cvpr2013.pdf">Measuring Crowd Collectiveness</a> at CVPR'13, June 2013, Portland.</li>
+        <li><a href="http://mmlab.ie.cuhk.edu.hk/projects/dynamicagent/presentation_ppt.pdf">Understanding Crowd Behaviors</a> at CVPR'12, June 2012, Rhode Island.</li>
+    </ul>
+<!--
+    <h2>Collaborators</h2>
+    <ul>
+        <li>I am fortunate to work with these great people: <a href="http://cvcl.mit.edu/Aude.htm">Aude Oliva</a>(MIT), <a href="http://vision.princeton.edu/people/xj/">Jianxiong Xiao</a>(Princeton), <a href="http://www.cvc.uab.es/~agata/">Agata Lapedriza</a>(UOC), <a href="http://dusp.mit.edu/faculty/jinhua-zhao">Jinhua Zhao</a>(MIT), <a href="http://www.ee.cuhk.edu.hk/~xgwang/">Xiaogang Wang</a>(CUHK), <a href="http://www.ie.cuhk.edu.hk/people/xotang.shtml">Xiaoou Tang</a>(CUHK), <a href="http://ins.sjtu.edu.cn/faculty/zhanghepeng">Hepeng Zhang</a>(SJTU), <a href="http://bcmi.sjtu.edu.cn/~zhangliqing/">Liqing Zhang</a>(SJTU), <a href="http://www.houxiaodi.com/">Xiaodi Hou</a>(Caltech), <a href="http://liuliu.us/">Liu Liu</a>(MIT), <a href="http://people.csail.mit.edu/khosla/">Aditya Khosla (MIT)</a>, Robinson Piramuthu(eBay Research Labs), Vignesh Jagadeesh(eBay Research Labs), Yuandong Tian(FB), Rob Fergus(NYU&FB), Arthur Szlam(FB), Sainbayar
+        Sukhbaatar(NYU), Zi Wang (MIT), Stefanie Jegelka (MIT), Hang Zhao (MIT), Xavier Puig (MIT), Sanja Fidler (UToronto), Larry Zitnick(FB).</li>
+    </ul>
+   -->
+    <h2>Personal interests</h2>
+    <ul>
+    <li>blogs:<a href="http://urbancomputation.wordpress.com/" target="_parent">Urban Computation</a>,<a href="https://crowdbehaviordotorg.wordpress.com/" target="_parent">Crowd Behavior &amp; Psychology</a></li>
+    <li><a href="https://people.csail.mit.edu/bzhou/book.html">books</a>, <a href="https://people.csail.mit.edu/bzhou/image/beacon_hill.jpg">rock climbing (5.11C,V6)</a>, <a href="https://people.csail.mit.edu/bzhou/bolei_juggle.mp4">juggling</a> (recently), <a href="https://people.csail.mit.edu/bzhou/image/bass.jpg">bass player</a> (former <a href="https://people.csail.mit.edu/bzhou/image/i3.jpg">lead guitarist</a>) </li>
+    </ul>
+</div>
+</div>
+
+</body></html>
