@@ -132,10 +132,6 @@ a:link, a:visited {
   text-decoration: none;
   border-bottom: 1px dashed #333;
 }
-a.social-buttons {
-  font-size: 30px;
-  margin-right: 10px;
-}
 a.anchor {
   display: block;
   position: relative;
