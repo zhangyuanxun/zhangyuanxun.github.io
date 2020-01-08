@@ -138,6 +138,11 @@ a.anchor {
   top: -110px;
   visibility: hidden;
 }
+a.social-buttons {
+  font-size: 30px;
+  margin-right: 10px;
+}
+
 ul li {
   margin-bottom: 8px;
   line-height: 1.5;
